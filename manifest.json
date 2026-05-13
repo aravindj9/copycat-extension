@@ -1,0 +1,19 @@
+{
+"manifest_version": 3,
+"name": "CopyCat",
+"version": "1.0",
+"description": "One-click copy for code snippets on any page",
+"content_scripts": [
+{
+"matches": ["https://*/*", "http://*/*"],
+"js": ["content.js"],
+"css": ["style.css"]
+}
+],
+"icons": {
+"16": "icon.png",
+"48": "icon.png",
+"128": "icon.png"
+},
+"permissions": ["activeTab"]
+}
